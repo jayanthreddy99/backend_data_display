@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesstable</title>
+</head>
+<body>
+    <center>
+        <h1>Display Access_table</h1>
+        <table border="5px">
+            <tr>
+                <th>id/pk</th>
+                <th>name</th>
+                <th>date</th>
+                <th>author</th>
+            </tr>
+            {% for ar in access %}
+            <tr>
+                <td>{{ar.id}}</td>
+                <td>{{ar.name}}</td>
+                <td>{{ar.date}}</td>
+                <td>{{ar.author}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
